@@ -829,6 +829,7 @@ export interface ApiHelpHelp extends Schema.CollectionType {
     singularName: 'help';
     pluralName: 'helps';
     displayName: '\u5E2E\u52A9\u6587\u6863';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -855,7 +856,6 @@ export interface ApiHelpHelp extends Schema.CollectionType {
       }>;
     body: Attribute.Blocks &
       Attribute.Required &
-      Attribute.Private &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
