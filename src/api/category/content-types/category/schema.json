@@ -12,15 +12,16 @@
   "pluginOptions": {},
   "attributes": {
     "Name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
     },
-    "restaurants": {
+    "slug": {
+      "type": "uid"
+    },
+    "posts": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::restaurant.restaurant",
-      "inversedBy": "categories"
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "category"
     }
   }
 }
