@@ -1,6 +1,6 @@
 export default {
   config: {
-    locales: ["zh-CN"],
+    locales: ["zh"],
     // translations: {
     //   zh: {
     //     City: "Chinese (Simplified, China) (zh-CN)",
